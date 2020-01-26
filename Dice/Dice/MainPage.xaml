@@ -21,7 +21,7 @@
             Clicked="Button_Clicked"
             Text="TAB" />
         <Label
-            x:Name="labelDice"
+            x:Name="diceLabel"
             Grid.Row="1"
             Text="0"
             TextColor="BlueViolet"
