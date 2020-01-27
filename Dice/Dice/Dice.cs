@@ -13,10 +13,13 @@ namespace Dice
             CountOfWalls = countOfWalls; 
         }
 
-        public int Throw()
+        public string Throw()
         {
             Random number = new Random();
-            return number.Next(1, CountOfWalls);
+            return number.Next(1, CountOfWalls + 1).ToString();
+            
+            
+         
         }
     }
 }

@@ -16,12 +16,13 @@ namespace Dice
         public MainPage()
         {
             InitializeComponent();
-            Dice dice = new Dice(6);
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            if()
+            Dice dice = new Dice(6);
+            DiceLabel.Text = dice.Throw();
+            
         }
     }
 }
