@@ -17,9 +17,6 @@ namespace Dice
         {
             Random number = new Random();
             return number.Next(1, CountOfWalls + 1).ToString();
-            
-            
-         
         }
     }
 }
