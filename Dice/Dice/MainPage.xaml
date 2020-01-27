@@ -10,23 +10,34 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Button
             Grid.Row="2"
             HorizontalOptions="Fill"
             VerticalOptions="Center"
-            WidthRequest="200"
+            BorderWidth="50"
             Clicked="Button_Clicked"
-            Text="TAB" />
+            Text="Roll Dice" 
+            CornerRadius="20"
+            HeightRequest="100"
+            FontSize="Large"
+            BackgroundColor="LightBlue"
+            Margin="30,0,30,50"
+            />
         <Label
             x:Name="DiceLabel"
             Grid.Row="1"
-            Text="0"
-            TextColor="BlueViolet"
+            TextColor="Black"
             HorizontalOptions="Center"
-            FontSize="Header" />
+            FontSize="Header" 
+            BackgroundColor="Gray"
+            Margin="20,20,20,100 "
+            WidthRequest="270"
+            HeightRequest="270"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            />
     </Grid>
 
 </ContentPage>
