@@ -13,16 +13,30 @@ namespace Dice
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        
+
         public MainPage()
         {
             InitializeComponent();
         }
-
-        private void Button_Clicked(object sender, EventArgs e)
+        private Dice dice; 
+        public void WallsSwitch_Toggled(object sender, ToggledEventArgs e)
         {
-            Dice dice = new Dice(6);
-            DiceLabel.Text = dice.Throw();
-            
+            if (e.Value == false)
+            {
+                dice = new Dice(6);
+                TextDice.Text = "SixEdgeDice";
+            }
+            else
+            {
+                dice = new Dice(10);
+                TextDice.Text = "TenEdgeDice";
+            }
+        }
+
+        public void Button_Clicked(object sender, EventArgs e)
+        {
+            DiceLabel.Text = dice.Throw();     
         }
     }
 }

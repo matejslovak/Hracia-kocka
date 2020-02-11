@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Forms;
 
 namespace Dice
 {
@@ -11,6 +12,10 @@ namespace Dice
         public Dice(int countOfWalls)
         {
             CountOfWalls = countOfWalls; 
+        }
+
+        public Dice(Switch wallsSwitch)
+        {
         }
 
         public string Throw()

@@ -10,10 +10,28 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        <Switch
+            x:Name="WallsSwitch"
+            Toggled="WallsSwitch_Toggled"
+            IsToggled="False"
+            OnColor="Green"
+            ThumbColor="Blue"
+            Margin="250,0,50,0"
+           />
+        <Label
+            x:Name="TextDice"
+            Grid.Row="1"
+            FontSize="Medium"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            TextColor="Black"
+            Margin="0,0,0,50"
+            />
         <Button
-            Grid.Row="2"
+            Grid.Row="3"
             HorizontalOptions="Fill"
             VerticalOptions="Center"
             BorderWidth="50"
@@ -27,12 +45,12 @@
             />
         <Label
             x:Name="DiceLabel"
-            Grid.Row="1"
+            Grid.Row="2"
             TextColor="Black"
             HorizontalOptions="Center"
             FontSize="Header" 
             BackgroundColor="Gray"
-            Margin="20,20,20,100 "
+            Margin="20,20,20,50 "
             WidthRequest="270"
             HeightRequest="270"
             HorizontalTextAlignment="Center"
