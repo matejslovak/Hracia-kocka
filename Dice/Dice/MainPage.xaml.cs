@@ -18,6 +18,8 @@ namespace Dice
         public MainPage()
         {
             InitializeComponent();
+            dice = new Dice(6);
+            TextDice.Text = "SixEdgeDice";
         }
         private Dice dice; 
         public void WallsSwitch_Toggled(object sender, ToggledEventArgs e)

@@ -20,6 +20,7 @@
             OnColor="Green"
             ThumbColor="Blue"
             Margin="250,0,50,0"
+            
            />
         <Label
             x:Name="TextDice"
