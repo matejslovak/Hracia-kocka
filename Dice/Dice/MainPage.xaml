@@ -6,6 +6,10 @@
              mc:Ignorable="d"
              x:Class="Dice.MainPage">
 
+    <ContentPage.BindingContext>
+        
+    </ContentPage.BindingContext>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -57,6 +61,13 @@
             HorizontalTextAlignment="Center"
             VerticalTextAlignment="Center"
             />
+        <Image x:Name="DicePic" Source="{Binding ActualPicture}" Grid.Row="1"/>
+        <!--<image source="/drawable/dice2.jpg" grid.row="1"/>
+        <image source="/drawable/dice3.jpg" grid.row="1"/>
+        <image source="/drawable/dice4.jpg" grid.row="1"/>
+        <image source="/drawable/dice5.jpg" grid.row="1"/>
+        <image source="/drawable/dice6.jpg" grid.row="1"/>-->
+        
     </Grid>
 
 </ContentPage>

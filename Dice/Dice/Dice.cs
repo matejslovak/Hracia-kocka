@@ -14,10 +14,6 @@ namespace Dice
             CountOfWalls = countOfWalls; 
         }
 
-        public Dice(Switch wallsSwitch)
-        {
-        }
-
         public string Throw()
         {
             Random number = new Random();
