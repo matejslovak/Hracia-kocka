@@ -4,12 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Dice.MainPage">
+             x:Class="Dice.Views.MainPage">
 
-    <ContentPage.BindingContext>
-        
-    </ContentPage.BindingContext>
-    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -61,8 +57,8 @@
             HorizontalTextAlignment="Center"
             VerticalTextAlignment="Center"
             />
-        <Image x:Name="DicePic" Source="{Binding ActualPicture}" Grid.Row="1"/>
-        <!--<image source="/drawable/dice2.jpg" grid.row="1"/>
+        <!--<image x:Name="DicePic" Source="{Binding ActualPicture}" Grid.Row="1"/>
+        <image source="/drawable/dice2.jpg" grid.row="1"/>
         <image source="/drawable/dice3.jpg" grid.row="1"/>
         <image source="/drawable/dice4.jpg" grid.row="1"/>
         <image source="/drawable/dice5.jpg" grid.row="1"/>
