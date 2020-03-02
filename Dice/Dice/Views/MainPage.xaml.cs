@@ -36,5 +36,10 @@ namespace Dice.Views
         {
             DiceLabel.Text = viewModel.dice.Throw();
         }
+
+        private void WallsSwitch_SizeChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
