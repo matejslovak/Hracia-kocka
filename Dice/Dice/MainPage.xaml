@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Dice.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Switch
+            x:Name="WallsSwitch"
+            Toggled="WallsSwitch_Toggled"
+            IsToggled="False"
+            OnColor="Green"
+            ThumbColor="Blue"
+            Margin="250,0,50,0"
+            
+           />
+        <Label
+            x:Name="TextDice"
+            Grid.Row="1"
+            FontSize="Medium"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            TextColor="Black"
+            Margin="0,0,0,50"
+            />
+        <Button
+            Grid.Row="3"
+            HorizontalOptions="Fill"
+            VerticalOptions="Center"
+            BorderWidth="50"
+            Clicked="Button_Clicked"
+            Text="Roll Dice" 
+            CornerRadius="20"
+            HeightRequest="100"
+            FontSize="Large"
+            BackgroundColor="LightBlue"
+            Margin="30,0,30,50"
+            />
+        <Label
+            x:Name="DiceLabel"
+            Grid.Row="2"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            FontSize="Header" 
+            BackgroundColor="Gray"
+            Margin="20,20,20,50 "
+            WidthRequest="270"
+            HeightRequest="270"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            />
+    </Grid>
+
+</ContentPage>
