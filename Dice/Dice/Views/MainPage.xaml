@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Dice.MainPage">
+             x:Class="Dice.Views.MainPage">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -57,6 +57,13 @@
             HorizontalTextAlignment="Center"
             VerticalTextAlignment="Center"
             />
+        <!--<image x:Name="DicePic" Source="{Binding ActualPicture}" Grid.Row="1"/>
+        <image source="/drawable/dice2.jpg" grid.row="1"/>
+        <image source="/drawable/dice3.jpg" grid.row="1"/>
+        <image source="/drawable/dice4.jpg" grid.row="1"/>
+        <image source="/drawable/dice5.jpg" grid.row="1"/>
+        <image source="/drawable/dice6.jpg" grid.row="1"/>-->
+        
     </Grid>
 
 </ContentPage>
